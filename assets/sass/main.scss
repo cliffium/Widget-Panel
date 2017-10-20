@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import "reset";
+@import "variables";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    //font-family: '微軟正黑體', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2px;
+    background: $lightGrey;
+}
+
+header {
+    vertical-align: middle;
+    height: 50px;
+    background: rgb(94, 94, 219);
+    #logo {
+        background: $lightBlack;
+        width: 200px;
+        padding-left: 10px;
+        height: 100%;
+        font-size: 1.2rem;
+        color: rgb(133, 133, 236);
+        display: inline-block;
+        span {
+            vertical-align: middle;
+            .fa {
+                font-size: 2.5rem;
+                color: rgb(94, 94, 219);
+            }
+        }
+    }
+    .user-area {
+        letter-spacing: 0;
+        font-size: 0.8rem;
+        float: right;
+        //margin-left: 500px;
+        //display: inline-block;
+        color: $lightGrey;
+        //padding: 10px;        
+        vertical-align: middle;
+        height: 50px;
+        padding: 12px 0px;
+        #username {
+            padding-right: 10px;
+        }
+        #logout {
+            transition: all 0.3s ease-in-out;
+            padding: 10px 10px 15px 10px;
+            color: $lightGrey;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: 300;
+            border-left: rgba(0, 0, 0, 0.205) solid 2px;
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                padding: 10px 5px 15px 15px;
+            }
+        }
+    }
+}
+
+#sideMenu {
+    background: $lightBlack;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    nav {
+        //padding-top: 100px;
+        a {
+            display: block;
+            color: $lightGrey;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 300;
+            transition: all 0.1s ease-in-out;
+            .fa {
+                color: $lightGreen;
+                margin-right: 1rem;
+                font-size: 1.5rem;
+                //display: inline-block;
+                width: 30px;
+                position: relative;
+                top: 2px;
+            }
+            &:hover {
+                background: $darkBlack;
+                border-left: 3px solid $lightGreen;
+                //padding: 10px 15px;
+            }
+        }
+    }
+}
+
+// h1 {
+//   font-weight: 100;
+//   font-size: 50px;
+// }
+// .home {
+//   height: 100%;
+//   width: 100%;
+//   text-align: center;
+//   img {
+//     width: 100%;
+//     max-width: 300px;
+//     margin: 0 auto;
+//   }
+//   .Aligner {
+//     min-height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   .Aligner-item {
+//     max-width: 50%;
+//   }
+//   .menu {
+//     ul {
+//       li {
+//         padding: 10px 15px;
+//         display: inline-block;
+//         font-family: 'Roboto', sans-serif;
+//         font-size: 18px;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+//   .version-num {
+//     background: #E8E8E8;
+//     border-radius: 4px;
+//     padding: 7px 15px;
+//     display: inline-block;
+//     font-size: 12px;
+//     margin: 10px 0 20px;
+//   }
+//   a {
+//     text-decoration: none;
+//     color: #30395C;
+//     transition: all 0.3s ease-in-out;
+//     &:hover {
+//       color: #43D4D6;
+//     }
+//   }
+// }
