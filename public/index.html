@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <base href="http://ps.telexpress.com/" target="_parent" />
 </head>
 
 
@@ -18,7 +19,7 @@
     <script src="/js/components/firstComp.js"></script-->
     <header>
         <div id="logo">
-            <span><i class="fa fa-bookmark" aria-hidden="true"></i></span> Widget Panel
+            <!--span><i class="fa fa-bookmark" aria-hidden="true"></i></span-->Widget Panel
         </div>
         <div class="user-area">
             <label id="username">Unknown User</label>
@@ -28,19 +29,55 @@
 
     <section id="sideMenu">
         <nav>
-            <a href="http://ps.telexpress.com/widgetpanel">
+            <a href="widgetpanel" title="系統說明、版本變更等資訊">
                 <i class="fa fa-home" aria-hidden="true" style="left:2px;"></i>首頁</a>
-            <a href="http://ps.telexpress.com/widgetpanel">
+            <a href="widgetpanel" title="PC資訊檢查、設定">
                 <i class="fa fa-desktop" aria-hidden="true"></i>電腦管理</a>
-            <a href="http://ps.telexpress.com/widgetpanel">
+            <a href="http://ps.telexpress.com/widgetpanel" title="IP、網路設備管理">
                 <i class="fa fa-connectdevelop" aria-hidden="true"></i>網路管理</a>
-            <a href="http://ps.telexpress.com/widgetpanel">
+            <a href="http://ps.telexpress.com/widgetpanel" title="FixIT環境設定">
                 <i class="fa fa-sliders" aria-hidden="true" style="left:3px;"></i>FixIT設定</a>
-            <a href="http://ps.telexpress.com/widgetpanel">
+            <a href="http://ps.telexpress.com/widgetpanel" title="回報FixIT或本網頁錯誤">
                 <i class="fa fa-bug" aria-hidden="true" style="left:3px;"></i>問題回報</a>
         </nav>
     </section>
+    <section id="content">
+        <div class="test" style="border:1px ridge  green; width:50%; padding:20px; display:inline-block;">
+            Test div
+        </div>
+        <div style="border:2px dotted purple; padding:10px; display:inline-block; width:49%;">
+            Test div
+        </div>
+        <blockquote>bq test</blockquote>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:50%;" colspan="2">Column 1</th>
+                    <th>Column 3</th>
+                    <th>Column 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">test 1-1</td>
+                    <td>test 1-1-1</td>
+                    <td>test 1-2</td>
+                    <td>test 1-3</td>
+                </tr>
+                <tr>
+                    <td>test 2-1</td>
+                    <!-- <td>test 2-1-1</td> -->
+                    <td>test 2-2</td>
+                    <td>test 2-3</td>
+                </tr>
+            </tbody>
+        </table>
+        <b> Bold Text </b><br />
+        <strong> Strong Text </strong><br />
+        <em>Em Text</em><br />
+        <i>I Text</i><br />
 
+    </section>
 </body>
 
 </html>
